@@ -1,0 +1,45 @@
+{
+  "target": {
+    "name": "CZ Aqr",
+    "ra": "23:22:20.560",
+    "dec": "-15:56:20.77"
+  },
+  "ephemeris": {
+    "t0_hjd": 2460232.18988,
+    "period_days": 0.86275208,
+    "t0_source": "Zeng et al. (2024), Table 6: 2460232.18988(09), labelled HJD. https://arxiv.org/html/2411.06803v1#S0.T6",
+    "period_source": "AAVSO VSX, CZ Aqr (OID 971), and Zeng et al. (2024), Eq. 1, give 0.86275209 d. The retained working value differs by -0.00000001 d. https://vsx.aavso.org/index.php?view=detail.top&oid=971",
+    "comment": "Fixed plotting ephemeris; fitted eclipse epoch is reported separately. HJD_UTC is the project convention; the source table labels HJD without specifying UTC/TDB. The working-period difference accumulates to about 1.1 s by these observations."
+  },
+  "comparison": {
+    "catalog_path": "reference/apass_comparison_catalog.ecsv",
+    "zero_point_clip_sigma": 2.5
+  },
+  "uncertainty": {
+    "reference_star_ids": [
+      "350.7266070_-15.8521530",
+      "350.5999100_-15.9874830"
+    ]
+  },
+  "photometry": {
+    "aperture_radius_fwhm": 1.5,
+    "annulus_inner_fwhm": 2.5,
+    "annulus_outer_fwhm": 4.0,
+    "centroid_box_size": 11,
+    "valid_fwhm_arcsec": [
+      0.7,
+      8.0
+    ],
+    "fallback_fwhm_px": 4.0
+  },
+  "quality": {
+    "saturation_fraction": 0.9,
+    "target_min_snr": 20.0,
+    "comparison_min_snr": 30.0,
+    "min_comparison_stars": 3
+  },
+  "output": {
+    "save_diagnostics": true,
+    "phase_start": 0.75
+  }
+}

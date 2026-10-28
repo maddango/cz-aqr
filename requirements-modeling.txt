@@ -1,0 +1,4 @@
+-r requirements.txt
+numpy>=2.0,<2.3
+scipy
+phoebe==2.5.4

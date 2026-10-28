@@ -1,0 +1,198 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: RAJ2000
+#   unit: deg
+#   datatype: float64
+#   format: '{:10.6f}'
+#   description: Right ascension in decimal degrees (J2000)
+#   meta: !!omap
+#   - {ucd: POS_EQ_RA_MAIN}
+#   - {width: 10}
+#   - {precision: '6'}
+# - name: DEJ2000
+#   unit: deg
+#   datatype: float64
+#   format: '{:10.6f}'
+#   description: Declination in decimal degrees (J2000)
+#   meta: !!omap
+#   - {ucd: POS_EQ_DEC_MAIN}
+#   - {width: 10}
+#   - {precision: '6'}
+# - name: e_RAJ2000
+#   unit: arcsec
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[0/2.4] RA uncertainty'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 6}
+#   - {precision: '3'}
+# - name: e_DEJ2000
+#   unit: arcsec
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[0/2.4] DEC uncertainty'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 6}
+#   - {precision: '3'}
+# - name: Field
+#   datatype: int64
+#   description: '[20110001/9999988888] Field name'
+#   meta: !!omap
+#   - {ucd: ID_FIELD}
+#   - {width: 10}
+# - name: nobs
+#   datatype: int16
+#   description: '[2/387] Number of observed nights'
+#   meta: !!omap
+#   - {ucd: NUMBER}
+#   - {width: 3}
+# - name: mobs
+#   datatype: int16
+#   description: '[2/3476] Number of images for this field, usually nobs*5'
+#   meta: !!omap
+#   - {ucd: NUMBER}
+#   - {width: 4}
+# - name: B-V
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[-7.5/13]? B-V color index'
+#   meta: !!omap
+#   - {ucd: PHOT_JHN_B-V}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: e_B-V
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[0/10.1]? B-V uncertainty'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: Vmag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[5.5/27.4]? Johnson V-band magnitude'
+#   meta: !!omap
+#   - {ucd: PHOT_JHN_V}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: e_Vmag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[0/7]? Vmag uncertainty'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: Bmag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[5.4/27.3]? Johnson B-band magnitude'
+#   meta: !!omap
+#   - {ucd: PHOT_JHN_B}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: e_Bmag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[0/10]? Bmag uncertainty'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: g'mag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[5.9/24.2]? g''-band AB magnitude, Sloan filter'
+#   meta: !!omap
+#   - {ucd: PHOT_SDSS_G}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: e_g'mag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[0/9.7]? g''mag uncertainty'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: r'mag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[5.1/23.9]? r''-band AB magnitude, Sloan filter'
+#   meta: !!omap
+#   - {ucd: PHOT_SDSS_R}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: e_r'mag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[0/6.5]? r''mag uncertainty'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: i'mag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[4.2/29.1]? i''-band AB magnitude, Sloan filter'
+#   meta: !!omap
+#   - {ucd: PHOT_SDSS_I}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# - name: e_i'mag
+#   unit: mag
+#   datatype: float32
+#   format: '{:6.3f}'
+#   description: '[0/9.6]? i''mag uncertainty'
+#   meta: !!omap
+#   - {ucd: ERROR}
+#   - {width: 6}
+#   - {precision: '3'}
+#   - values: {'null': .nan}
+# meta: !!omap
+# - {ID: II_336_apass9}
+# - {name: II/336/apass9}
+# - {description: 'The APASS catalog, output (on a total of 62 million sources)'}
+# schema: astropy-2.0
+RAJ2000 DEJ2000 e_RAJ2000 e_DEJ2000 Field nobs mobs B-V e_B-V Vmag e_Vmag Bmag e_Bmag g'mag e_g'mag r'mag e_r'mag i'mag e_i'mag
+350.644704 -15.923285 0.139 0.099 20130928 8 37 0.704 0.03 11.48 0.02 12.184 0.022 11.813 0.022 11.33 0.004 11.162 0.071
+350.693401 -16.013781 0.177 0.262 20130928 7 35 0.873 0.03 12.855 0.015 13.729 0.026 13.276 0.027 12.634 0.008 12.45 0.016
+350.549912 -15.778836 0.157 0.088 20130928 8 37 0.631 0.034 12.439 0.021 13.07 0.026 12.727 0.027 12.308 0.015 12.147 0.066
+350.503783 -15.957362 0.174 0.203 20130928 8 45 0.457 0.039 12.384 0.023 12.841 0.032 12.581 0.036 12.33 0.024 12.259 0.062
+350.442178 -15.948901 0.233 0.297 20130928 9 48 0.767 0.037 13.068 0.018 13.835 0.032 13.423 0.035 12.898 0.022 12.723 0.057
+350.688506 -15.981878 0.387 0.188 20130928 8 36 0.777 0.036 13.09 0.021 13.868 0.029 13.449 0.026 12.894 0.013 12.739 0.022
+350.491696 -15.914469 0.324 0.178 20130928 8 45 0.616 0.044 13.293 0.022 13.908 0.038 13.572 0.037 13.18 0.018 13.041 0.046
+350.466194 -16.055099 0.253 0.265 20160927 8 42 0.746 0.038 13.4 0.022 14.146 0.031 13.75 0.037 13.203 0.021 13.019 0.071
+350.472023 -15.889518 0.244 0.17 20130928 9 46 0.877 0.041 13.257 0.024 14.134 0.034 13.688 0.036 12.984 0.013 12.714 0.051
+350.53124 -16.08237 0.334 0.327 20130928 8 36 0.819 0.035 13.621 0.021 14.44 0.028 14.027 0.034 13.407 0.019 13.182 0.065
+350.464691 -15.943589 0.455 0.239 20160927 8 42 0.71 0.03 14.077 0.019 14.787 0.022 14.417 0.04 13.914 0.032 13.748 0.066
+350.59991 -15.987483 0.127 0.053 20130928 8 37 0.734 0.061 10.697 0.054 11.431 0.028 11.04 0.03 10.519 0.052 10.301 0.064
+350.726607 -15.852153 0.154 0.084 20130928 7 35 0.44 0.058 10.82 0.054 11.259 0.021 11.006 0.018 10.763 0.033 10.719 0.033
+350.685574 -16.068293 0.176 0.123 20160927 6 30 0.696 0.04 13.413 0.029 14.109 0.028 13.747 0.039 13.262 0.026 13.142 0.037
+350.502694 -16.029949 0.225 0.274 20160927 7 36 0.599 0.052 13.802 0.032 14.401 0.041 14.077 0.036 13.687 0.025 13.518 0.072

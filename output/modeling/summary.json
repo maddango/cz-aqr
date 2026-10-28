@@ -1,0 +1,11 @@
+{
+  "optimizer_success": true,
+  "message": "Optimization terminated successfully.",
+  "evaluations": 385,
+  "mode": "fit",
+  "n_observations": 30,
+  "degrees_of_freedom": 25,
+  "chi2": 22.61157988058726,
+  "reduced_chi2": 0.9044631952234904,
+  "rms_residual_mag": 0.007529656712682988
+}

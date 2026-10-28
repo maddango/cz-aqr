@@ -1,0 +1,11 @@
+quantity,value,unit,status,definition
+Brightest model V magnitude,10.65960350417172,mag,model-derived,Minimum magnitude of the saved sampled model; reference for both eclipse depths
+Primary eclipse depth,1.4315512951802134,mag,model-derived,Faintest sampled model magnitude in this half-orbit minus brightest model magnitude
+Primary eclipse flux loss,73.2465692586161,%,model-derived,Brightness reduction relative to the brightest sampled model: 100*(1-10**(-0.4*depth))
+Secondary eclipse depth,0.25752103280189154,mag,model-derived,Faintest sampled model magnitude in this half-orbit minus brightest model magnitude
+Secondary eclipse flux loss,21.11551639735979,%,model-derived,Brightness reduction relative to the brightest sampled model: 100*(1-10**(-0.4*depth))
+Secondary temperature,5514.566966745327,K,model-derived,Fitted T2/T1 times adopted T1=8200 K; not an independent temperature measurement
+Primary equivalent radius,1.8086659306108064,solar radii,model-derived,"Fitted R1/a times adopted a=5.09 solar radii; volume-equivalent radius, conditional on adopted separation"
+Primary eclipse epoch,2461320.979457624,HJD (UTC),model-derived,T0 + (E + phase_shift)*P; fitted primary conjunction nearest median observation HJD; timing uncertainty not estimated
+Primary eclipse epoch cycle,1262.0,cycles,model-derived,Integer E relative to the adopted T0; identifies the reported model-derived epoch
+Eclipse timing offset,-5.108164175100376,min,model-derived,Fitted phase_shift*P*1440 relative to adopted ephemeris; negative means earlier; not a period-change measurement

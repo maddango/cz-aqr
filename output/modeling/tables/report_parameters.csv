@@ -1,0 +1,23 @@
+quantity,value,unit,status
+Inclination,88.79,deg,fitted
+Primary radius / separation,0.3553,1,fitted
+Secondary / primary temperature,0.6725,1,fitted
+Phase shift,-0.00411,cycles,fitted
+Magnitude offset,10.8336,mag,profiled
+Mass ratio M2/M1,0.4866,1,adopted
+Primary temperature,8200,K,adopted
+Orbital separation,5.09,solar radii,adopted
+Orbital period,0.86275208,days,adopted
+Reference epoch,2460232.18988,HJD (UTC),adopted
+Eccentricity,0,1,fixed
+Rotation / orbital frequency,1,1,fixed
+Brightest model V magnitude,10.660,mag,model-derived
+Primary eclipse depth,1.432,mag,model-derived
+Primary eclipse flux loss,73.2,%,model-derived
+Secondary eclipse depth,0.258,mag,model-derived
+Secondary eclipse flux loss,21.1,%,model-derived
+Secondary temperature,5515,K,model-derived
+Primary equivalent radius,1.809,solar radii,model-derived
+Primary eclipse epoch,2461320.97946,HJD (UTC),model-derived
+Primary eclipse epoch cycle,1262,cycles,model-derived
+Eclipse timing offset,-5.11,min,model-derived

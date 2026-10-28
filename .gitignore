@@ -1,0 +1,40 @@
+# Python environments and caches
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+.aws/
+
+# Observational data and historical backups
+/inputs/
+/rejected_inputs/
+/backup/
+
+# Local exploratory work
+/notebooks/
+/output/input_quality*/
+
+# Local tests
+/tests/
+
+# Private report sources and compiled documents
+/report/
+
+# Bulky generated artifacts
+/output/diagnostics/
+/output/*.zip
+
+# LaTeX build intermediates
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz

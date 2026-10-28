@@ -1,0 +1,29 @@
+{
+  "source": "https://arxiv.org/html/2411.06803v1#S3 (Tables 2 and 3)",
+  "adopted": {
+    "mass_ratio": 0.4866,
+    "primary_temperature_K": 8200.0,
+    "separation_Rsun": 5.09
+  },
+  "initial": {
+    "incl_deg": 89.79,
+    "r1_fraction": 0.353,
+    "temperature_ratio": 0.67927,
+    "phase_shift": 0.0
+  },
+  "bounds": {
+    "incl_deg": [75.0, 90.0],
+    "r1_fraction": [0.25, 0.42],
+    "temperature_ratio": [0.50, 0.85],
+    "phase_shift": [-0.04, 0.04]
+  },
+  "compute": {
+    "ntriangles": 3000,
+    "curve_points": 301
+  },
+  "optimizer": {
+    "max_evaluations": 400,
+    "xtol": 0.001,
+    "ftol": 0.0001
+  }
+}

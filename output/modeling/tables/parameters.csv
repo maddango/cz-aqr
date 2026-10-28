@@ -1,0 +1,6 @@
+parameter,value,unit,status
+incl_deg,88.79254578124305,deg,fitted
+r1_fraction,0.3553371179981938,1,fitted
+temperature_ratio,0.6725081666762593,1,fitted
+phase_shift,-0.004111651904343823,cycles,fitted
+magnitude_offset,10.83361381947545,mag,profiled
